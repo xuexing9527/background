@@ -1,0 +1,33 @@
+include ../partial/header
+include ../partial/footer
+include ../partial/commonhead
+link(rel='stylesheet', href='/stylesheets/part/csg_reportCreate.css')
+//script(type='text/javascript', charset='utf-8', src='/javascript/common/ueditor/ueditor.config.js')
+//script(type='text/javascript', charset='utf-8', src='/javascript/common/ueditor/ueditor.all.js')
+// 建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败
+// 这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文
+//script(type='text/javascript', charset='utf-8', src='/javascript/common/ueditor/lang/zh-cn/zh-cn.js')
+//源码ueditor
+script(type='text/javascript', charset='utf-8', src='/javascript/common/src/utf8-php/ueditor.config.js')
+script(type='text/javascript', charset='utf-8', src='/javascript/common/src/utf8-php/ueditor.all.js')
+//修改过的文件
+script(type='text/javascript', charset='utf-8', src='/javascript/common/reUeditor/ueditor.config.js')
+script(type='text/javascript', charset='utf-8', src='/javascript/common/reUeditor/ueditor.all.js')
+//源码ueditor
+script(type='text/javascript', charset='utf-8', src='/javascript/common/src/utf8-php/lang/zh-cn/zh-cn.js')
+.common_content
+    .common_content_center
+        .left
+            .lestbox
+                ul.leftul
+                    li
+                        span.span1
+                        a.a2(href='/reportQuery/rendering/reportQuery') 查询报告
+                    li
+                        span.span2
+                        a.a1(href='/reportQuery/rendering/reportCreate') 创建报告
+                    //li
+                    //    span.span3
+                    //    a.a3(href='#') 生成报告
+        block right
+

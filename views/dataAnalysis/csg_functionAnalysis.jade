@@ -1,0 +1,106 @@
+extends ../partial/dataAnalysis_left
+block append right
+    .right.clearfix
+        .functionleft.clearfix
+            .funcminbox
+                span.waitanlysis
+                    | 待分析的列表
+                .btnchose
+                    form
+                        //input.all(type='button', value='全选')
+                        //input.deleat(type='button', value='删除' id="func_delete")
+                .datalist
+                    table.listtable(cellspacing='0', border='1px')
+                        tbody#func_tbody
+                            tr
+                                td.td1
+                                    input.opt1(type='checkbox', name='', value='opt1')
+                                td.tdd1
+                    .query_footer_right
+                        div.pager.pager03
+            .analysis-resultbox
+                span.analysis-font 分析结果：
+                .analysis-result
+                    ul.anlysis-boxone
+                        li.anlysis-lione.clearfix
+                            a(href="javascript:void(0)", class="func_sqlone func_sqlstyle") 车型分布饼状图
+                            input.deleat(type='button', value='删除', class="func_sql_delete")
+                        li.anlysis-lione.clearfix
+                            a(href="javascript:void(0)", class="func_sqltwo func_sqlstyle") 性别分布饼状图
+                            input.deleat(type='button', value='删除', class="func_sql_delete")
+                        li.anlysis-lione.clearfix
+                            a(href="javascript:void(0)", class="func_sqlthree func_sqlstyle") 省份分布饼状图
+                            input.deleat(type='button', value='删除', class="func_sql_delete")
+                        li.anlysis-lione.clearfix
+                            a(href="javascript:void(0)", class="func_sqlfour func_sqlstyle") AMG车主地域分布
+                            input.deleat(type='button', value='删除', class="func_sql_delete")
+                        li.anlysis-lione.clearfix
+                            a(href="javascript:void(0)", class="func_sqlfive func_sqlstyle") 锋范地域分布
+                            input.deleat(type='button', value='删除', class="func_sql_delete")
+        .functionright
+            #anlysisrighttop
+                .anlysistop
+                    // 函数分析
+                    .functiontop
+                        span.funanlysis
+                            | 函数分析
+                    .anlysislistbox
+                        form.anlysistopform
+                            ul.anlysis_ul
+                                li
+                                    label 输出:
+                                    input(type="text" name="func_select" id="func_select"  class="input-1 input-2" placeholder="")
+                                li
+                                    label 来源:
+                                    input(type="text" name="func_from" id="func_from"  class="input-1" placeholder="" value="dataMart" disabled="disabled")
+                                li
+                                    label 条件:
+                                    input(type="text" name="func_where" id="func_where" class="input-1 input-2" placeholder="")
+                                li
+                                    label 排序:
+                                    input(type="text" name="func_order" id="func_order"  class="input-1 input-2" placeholder="")
+                                li
+                                    label 分组:
+                                    input(type="text" name="func_group" id="func_group"  class="input-1 input-2" placeholder="")
+                            ul.anlysis_ul_ul
+                                li
+                                    label 限定:
+                                    select(id="func_sql" name="func_sql")
+                                        option(value="10") 10
+                                        option(value="25") 25
+                                        option(value="50") 50
+                                        option(value="100") 100
+                                    input.allAnlysis.ananananana(type='button', value='分析')
+                                    input.allAnlysis.zhediezhedie(type='button', value='折叠按钮')
+                // 结果展示区
+                .anlysis-tablebox
+                    .resultbox
+                        table#func_table(border="1" cellpadding="0" cellspacing="0")
+                    .resultbtns
+                        input.keep(type='reset', value='清空', id="func_quite", name="func_quite")
+                        input.nokeep(type='button', value='保存', id="func_save", name="func_save")
+                    #func_popup
+                        table#func_popup_table(border="1" cellpadding="0" cellspacing="0")
+                            tbody#func_popup_table_tbody
+            // echart图形
+            .echattfunctionbox
+                .function-tablebox
+                    .function-libox
+                        ul.function-liboxul
+                            a(href="javascript:void(0)").function-show
+                                li 图形展示
+                            a(href="javascript:void(0)").function-pic
+                                li 饼状图
+                            a(href="javascript:void(0)").function-map
+                                li 地图
+                #resultdefault 暂无图形，请立即进行分析
+                #resultecharts
+                //#resultecharts-trend
+                #resultecharts-map
+        //js执行
+        .csg_functionAnalysis(style="display:none")
+            link(rel='stylesheet', href='/stylesheets/part/csg_functionAnalysis.css')
+            script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/map/js/china.js")
+            script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_functionAnalysis.js")
+            script(type="text/javascript").
+                CSG.port.csg_functionAnalysis.init();

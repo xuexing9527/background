@@ -1,0 +1,40 @@
+extends ./../partial/crawlers_left
+block right
+    .right
+        .xxmodal#xxmodal
+        .xxInstenceContainer
+            .xxheader
+                h1 任务执行
+            .xxSection
+                .xxTable
+                    table#task
+                        thead
+                            tr
+                                each val in data = ['','任务名称','开始时间','结束时间','状态','操作']
+                                    th
+                                        span= val
+                        tbody
+                            each val in data = [0,1,2,3,4,5,6,7,8,9]
+                                tr
+                                    td
+                                        //input(type='checkbox')
+                                        each val in data = [' ',' ',' ',' ']
+                                            td= val
+                                        td
+                                            //span.runExample 立即执行
+                                            span(style='display:none;')= val
+                            //tr
+                            //    td
+                            //        input(type='checkbox')
+                            //        each val in data = ['任务一','2016-12-12 16:00','2016-12-12 16:30','执行完毕']
+                            //            td= val
+                            //        td
+                            //            span.runExample 立即执行
+                .xxunderTable
+                    span.chouseAll 全选
+                    span.checkout#checkout 查看
+                    span.page#homePage
+                .xxfooter
+                    .anasylizeExample 分析选中任务
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/src/jquery.page.js")
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/crawlers/taskList.js")

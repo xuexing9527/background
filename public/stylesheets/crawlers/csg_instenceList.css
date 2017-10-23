@@ -1,0 +1,169 @@
+
+nobr{
+   width: 100px;
+   display: inline-block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+/*.csgx_instencelist,*/
+.csgx_instencelist>.bread,
+.csgx_instencelist>.container,
+.csgx_instencelist>.container>.teskDetail,
+.csgx_instencelist>.container>.instenceList
+/*.csgx_instencelist>.container>.instenceList>h2,*/
+/*.csgx_instencelist>.container>.instenceList>ul.list*/
+{
+   border: 1px solid #D8D8D8;
+   border-radius: 5px;
+}
+
+.csgx_instencelist{
+}
+.csgx_instencelist>.bread{}
+.csgx_instencelist>.container{
+   width: 80%;
+
+   margin: 20px auto;
+   padding: 0 1em;
+}
+.csgx_instencelist>.container>.teskDetail{
+   height: 100px;
+   margin: 10px 0;
+}
+.csgx_instencelist>.container>.teskDetail>li{
+   padding-left: 15px;
+}
+.csgx_instencelist>.container>.instenceList{
+   height: 500px;
+}
+.csgx_instencelist>.container>.instenceList>h2{
+   margin: 10px 0;
+}
+.csgx_instencelist>.container>.instenceList>h2 b{
+   display: inline-block;
+   padding: .5em 1em;
+}
+.csgx_instencelist>.container>.instenceList>h2 a{
+   line-height: 26px;
+   font-weight: normal;
+   font-size: 12px;
+   padding: 0 18px;
+   margin: 0 10px;
+   border: 1px solid #B4B4B4;
+   border-radius: 5px;
+   display: inline-block;
+   cursor: pointer;
+    text-decoration: none;
+}
+.csgx_instencelist>.container>.instenceList>h2 a:hover{
+   color: #fff;
+   background-color: #1A9378;
+}
+.csgx_instencelist>.container>.instenceList>ul.list{
+   height: 350px;
+
+   overflow: scroll;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li{
+   margin: 12px 0;
+   background-color: #D6DBDF;
+}
+/*.csgx_instencelist>.container>.instenceList>ul.list>li>p{*/
+.csgx_instencelist>.container>.instenceList>ul.list>li{
+   margin-left: 14px;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>p>a{
+   line-height: 46px;
+   display: inline-block;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>p>i{
+   float: right;
+   margin: 10px 20px 0 0;
+   border: 9px solid transparent;
+   border-top-color: #fff;
+   cursor: pointer;
+   transition: transform .2s;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>div.grapList{
+
+   margin: 0 22px 22px 18px;
+   background-color: #fff;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>div.grapList>p:first-child{
+   margin-top: 15px;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>div.grapList>p{
+   margin: 0 0 15px 40px;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>div.grapList>p:last-child{
+   margin-bottom: 15px;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>div.grapList>p>a>nobr{
+   width: 400px;
+   display: inline-block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.csgx_instencelist>.container>.instenceList>ul.list>li>p>input{
+   margin-right: 30px;
+}
+.close{
+   width: 30px;
+   line-height: 30px;
+
+   float: right;
+
+   margin: 10px;
+
+   border-radius: 50%;
+   background-color: #BABEC2;
+   text-align: center;
+
+   cursor: pointer;
+
+}
+
+.rotate{
+   transform:rotate(180deg);
+}
+.xxhide{
+   display: none;
+}
+
+.detailPop{
+   width: 800px;
+   position: absolute;
+   right: 150px;
+   top: 40px;
+   display: none;
+   border: 1px solid #7D909D;
+   border-radius: 15px;
+   z-index: 550;
+   background-color: #fff;
+}
+.detailPop>.popContainer{
+   width: 90%;
+   margin: 5px auto;
+   margin-bottom: 100px;
+}
+.detailPop>.popContainer>h1{
+   margin-top: 20px;
+}
+.detailPop>.popContainer>.header>.taskDetail>div>span{
+   display: inline-block;
+}
+.detailPop>.popContainer>.header{
+   height: 100px;
+   border: 1px solid #D8D8D8;
+}
+.detailPop>.popContainer>.bottom{
+   height: 400px;
+   margin-top: 5px;
+   border: 1px solid #D8D8D8;
+}
+.detailPop>.popContainer>.bottom>p{
+   padding: 0 1em;
+   margin: 5px 0;
+}

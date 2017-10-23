@@ -1,0 +1,66 @@
+include ../partial/header
+link(rel='stylesheet', href='/stylesheets/common/common.css')
+link(rel='stylesheet', href='/stylesheets/part/csg_importDataDetails.css')
+link(rel='stylesheet', href='/stylesheets/part/jquery.page.css')
+include ../partial/commonhead
+
+div#anlysisbox.clearfix
+    include ../partial/dataAnalysis_left
+    #anlysisright
+        #anlysisrighttop
+            .anlysistop
+                form.anlysistopform
+                    ul.ul_content_part01
+                        li
+                            span 表名称:
+                            i 汽车爬取任务
+                        li
+                            span 数量:
+                            i 5000
+                        li
+                            span 导入时间:
+                            i 2014-01-31 12:30:25
+            // 表单结束
+            // 实时数据
+            .bigbox
+                .datalist
+                    table#ddd.listtable(cellspacing='0', border='1px')
+                        tr
+                            th.choseone 姓名
+                            th.btnthones 性别
+                            th.btnthones 年龄
+                            th.btnthones 职业
+                            th.btnthones 行业
+                        tr
+                            td 1
+                            td 2
+                            td 3
+                            td 4
+                            td 5
+                        tr
+                            td 1
+                            td 2
+                            td 3
+                            td 4
+                            td 5
+                        tr
+                            td 1
+                            td 2
+                            td 3
+                            td 4
+                            td 5
+                        tr
+                            td 1
+                            td 2
+                            td 3
+                            td 4
+                            td 5
+                // 数据表结束
+                // 分析选中数据
+                #page
+
+include ../partial/commonfoot
+include ../partial/footer
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_importDataDetails.js")
+script(type="text/javascript").
+    CSG.port.csg_importDataDetails.init();

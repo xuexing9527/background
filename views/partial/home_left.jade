@@ -1,0 +1,13 @@
+include ../partial/header
+include ../partial/footer
+include ../partial/commonhead
+link(rel='stylesheet', href='/stylesheets/part/csg_home.css')
+.common_content
+    block right
+//.common_footer
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_third_map.js")
+script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/map/js/china.js")
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_home.js")
+script(type="text/javascript").
+    CSG.port.csg_home.init();
+script(type="text/javascript", charset="utf-8", src="/javascript/common/crawlers/index.js")

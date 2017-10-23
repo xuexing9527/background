@@ -1,0 +1,277 @@
+.indexcontain {
+    width: 1182px;
+    /*text-align: center;*/
+    margin: 0 auto;
+    padding: 40px 50px 0 50px;
+
+}
+.indexcontain .indexconbotm {
+    margin-top: 10px;
+    width: 1182px;
+    /*border: 1px solid #bcbcbc;*/
+}
+.common_top .jxy_home_trendbox .jxy_home_timebox .topoverview {
+    display: block;
+    width: 365px;
+    height: 30px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: white;
+    padding-top: 10px;
+    /*background: -webkit-linear-gradient(top,#fff,#f3f3f3);*/
+}
+.common_top .jxy_home_trendbox .jxy_home_timebox .real_time_data{
+    width: 365px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+.jxy_home_echartsbox{
+    width: 365px;
+    height: 222px;
+}
+.indexcontain .botminformation {
+    width: 387px;
+    height: 322px;
+    float: left;
+    /*margin-top: 10px;*/
+}
+.indexcontain .indexrightpic {
+    width: 385px;
+    height: 320px;
+    float: left;
+    border: 1px solid #484f61;
+    margin-right: 10px;
+    background: url("/images/static/csg-home/tab_1.png") no-repeat center center;
+}
+.indexcontain .indexrightpic .datalist {
+    width: 385px;
+    height: 322px;
+    /*float: left;*/
+}
+.indexcontain .botminformation .datalist .listtable {
+    width:387px;
+    height: 322px;
+    border: 1px solid #484f61;
+}
+.indexcontain .botminformation .datalist .listtable tr th {
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+ .datalist .listtable tbody tr td {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.indexcontain .botminformation .datalist .listtable tbody tr:nth-child(even) {
+    background: #3d414f;
+}
+.indexcontain .botminformation .datalist .listtable tbody tr:nth-child(odd) {
+    background: #343847;
+}
+.indexcontain .indexrightpic #satisfied{
+    width:385px;
+    height: 321px;
+}
+.indexcontain .indexconbotm .dataanalysis .rightspantop {
+    width: 1179px;
+    height: 40px;
+    border-bottom: 1px solid #BCBCBC;
+    color: #6d7e8a;
+    background: -webkit-linear-gradient(top,#fff,#f3f3f3)
+}
+.indexcontain .indexconbotm .rightspantop .spannumber {
+    width: 650px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.indexcontain .indexconbotm .rightspantop .spanmore {
+    width: 70px;
+    height: 40px;
+    display: block;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #6d7e8a;
+
+}
+.indexcontain .indexconbotm .botmecharts {
+    width: 1181px;
+    height: 330px;
+    /* border: 1px solid #484f61; */
+    background: url(/images/static/csg-home/tab_2.png) no-repeat center center;
+    background-size: 100% 100%;
+
+}
+.indexcontain .indexconbotm .botmecharts .leftechartsone {
+    width: 386px;
+    height: 278px;
+    float: left;
+    /*border: 1px solid #d9d9d9;*/
+    margin-right: 10px;
+}
+.indexcontain .indexconbotm .botmecharts .rightechartstwo {
+    width: 385px;
+    height: 278px;
+    float: left;
+    /*border: 1px solid #d9d9d9;*/
+}
+.indexcontain .indexconbotm .botmecharts .leftechartsone #stack {
+    width: 385px;
+    height: 275px;
+}
+.indexcontain .indexconbotm .botmecharts .rightechartstwo #scatter {
+    width: 385px;
+    height: 278px;
+}
+.indexcontain .indexconbotm .acquisition {
+    width: 378px;
+    height: 354px;
+    float: left;
+    /* border-left: 1px solid #BCBCBC;*/
+    margin-left: 18px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+}
+.indexcontain .indexconbotm .acquisition .acquisitionbox {
+    width: 378px;
+    height: 40px;
+    background: #F8F8F8;
+    /* border-right: 1px solid black;*/
+    border-bottom: 1px solid #d9d9d9;
+    color: #6d7e8a;
+    background: -webkit-linear-gradient(top,#fff,#f3f3f3);
+}
+.indexcontain .indexconbotm .acquisition .acquisitionbox .numberhq {
+    width: 280px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.indexcontain .indexconbotm .acquisition .acquisitionbox .numbermore {
+    width: 60px;
+    height: 40px;
+    display: block;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #6d7e8a;
+}
+.indexcontain .indexconbotm .acquisition .listcontent {
+    width: 360px;
+    height: 283px;
+    margin: 0 auto;
+}
+.indexcontain .indexconbotm .acquisition .listcontent ul {
+    width: 340px;
+    height: 284px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+.indexcontain .indexconbotm .acquisition .listcontent ul li {
+    width: 340px;
+    height: 40px;
+    font-size: 14px;
+    border-bottom: 1px dashed #6d7e8a;
+    line-height: 40px;
+}
+.indexcontain .indexconbotm .acquisition .listcontent ul li .timeindex {
+    float: left;
+    text-decoration: none;
+    color: #7d909e;
+}
+.indexcontain .indexconbotm .acquisition .listcontent ul li .listname {
+    float: left;
+    margin-left: 45px;
+    text-decoration: none;
+    color: #6d7e8a;
+}
+.common_top {
+    width: 1182px;
+    height: 322px;
+    /*background: #ffffff;*/
+    /*border: 1px solid #d9d9d9;*/
+    /*border-bottom: 2px solid #d9d9d9;*/
+}
+.jxy_home_trendbox{
+    width: 385px;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #32d0aa;
+    float: left;
+    /*margin-top: 10px;*/
+    margin-right: 10px;
+    /*background: #1e222b;*/
+    border: 1px solid #484f61;
+    /*opacity: 0.9;*/
+    background: url("/images/static/csg-home/tab_1.png") no-repeat center center;
+}
+.real_time_data{
+
+}
+#centsex{
+    width: 385px;
+    height: 278px;
+    float: left;
+    /*border: 1px solid #d9d9d9;*/
+    margin-right: 10px;
+ }
+.datalist table{
+    color: #b2b3b7;
+}
+.datalist table tbody{
+    font-size: 12px;
+}
+.datalist table thead tr{
+    height: 34px;
+}
+.datalist table thead tr th:nth-child(1){
+    width: 20%;
+}
+.datalist table tbody tr{
+    /*height: 32px;*/
+}
+.datalist table tbody tr td:nth-child(1){
+    text-align: left;
+    padding-left: 16px;
+}
+.echarst_title{
+
+}
+.echarst_title p{
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.bottom_title{
+
+}
+.bottom_title p{
+    font-size: 12px;
+    color: #b2b3b7;
+    width: 1180px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}

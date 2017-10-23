@@ -1,0 +1,747 @@
+/*-----------------denglu---------------------*/
+.header {
+  width: 100%;
+  background: #cccccc;
+  overflow: hidden;
+}
+.headerCtn {
+  width: 1190px;
+  height: 124px;
+  margin: 0 auto;
+}
+.zhu_f9 input {
+  width: 405px;
+  height: 49px;
+  background: #e04040;
+  color: #ffffff;
+  font-size: 22px;
+  border: 0;
+  border-top: 1px solid #f0a0a0;
+  border-bottom: 1px solid #c11f1f;
+  margin-left: 100px;
+}
+.headerCtn h1 {
+  float: left;
+  margin-top: 38px;
+}
+.headerCtn p {
+  float: left;
+  margin: 50px 0 0 480px;
+}
+.headerCtn p span {
+  float: left;
+  display: block;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #666;
+}
+.headerCtn p a:hover {
+  color: #e14041;
+}
+.dl_main,
+.footer {
+  overflow: hidden;
+  width: 100%;
+  background: #ededed;
+}
+.dl_mainCtn {
+  overflow: hidden;
+  width: 1190px;
+  margin: 40px auto;
+  background: #fff;
+}
+.xiangmu {
+  width: 1190px;
+  height: 50px;
+  background: #cccccc repeat-x 0 45px;
+}
+.xiangmu h2 {
+  width: 1080px;
+  line-height: 45px;
+  font-size: 16px;
+  text-indent: 30px;
+  float: left;
+}
+.xiangmu a {
+  line-height: 45px;
+  font-size: 16px;
+  color: #e14041;
+  text-decoration: underline;
+}
+.dl_cLeft {
+  width: 530px;
+  height: 380px;
+  background: #cccccc no-repeat 100px 25px;
+}
+.dl_cLeft a {
+  width: 330px;
+  height: 330px;
+  display: block;
+  margin: 25px 100px;
+}
+.dl_cRight {
+  overflow: hidden;
+  margin-top: 35px;
+}
+.dl_cRight form span {
+  width: 60px;
+  display: block;
+  float: left;
+  font-size: 14px;
+}
+.dl_cRight .fault11,
+.dl_cRight .fault12,
+.dl_cRight .fault13 {
+  display: none;
+  width: 300px;
+  height: 20px;
+  padding-left: 80px;
+  line-height: 20px;
+  color: red;
+}
+.dl_f1,
+.dl_f2 {
+  overflow: hidden;
+  width: 470px;
+  /*margin: 10px 0;*/
+  line-height: 64px;
+}
+.dl_f1 input,
+.dl_f2 input {
+  width: 402px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+.dl_f3 {
+  float: left;
+  width: 470px;
+  /*height: 64px;*/
+  line-height: 64px;
+}
+.dl_f3 input {
+  width: 188px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+/*.dl_f4{*/
+/*width: 200px;*/
+/*height: 64px;*/
+/*float: left;*/
+/*}*/
+.header {
+  width: 100%;
+  background: #cccccc;
+  overflow: hidden;
+}
+.headerCtn {
+  width: 1190px;
+  height: 124px;
+  margin: 0 auto;
+}
+.headerCtn h1 {
+  float: left;
+  margin-top: 38px;
+}
+.headerCtn p {
+  float: left;
+  margin: 50px 0 0 480px;
+}
+.headerCtn p span {
+  float: left;
+  display: block;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #666666;
+}
+.headerCtn p a:hover {
+  color: #e14041;
+}
+.dl_main,
+.footer {
+  overflow: hidden;
+  width: 100%;
+  background: #ededed;
+}
+.dl_mainCtn {
+  overflow: hidden;
+  width: 1190px;
+  margin: 40px auto;
+  background: #ffffff;
+}
+.xiangmu {
+  width: 1190px;
+  height: 50px;
+  background: #cccccc;
+}
+.xiangmu h2 {
+  width: 1080px;
+  line-height: 45px;
+  font-size: 16px;
+  text-indent: 30px;
+  float: left;
+}
+.xiangmu a {
+  line-height: 45px;
+  font-size: 16px;
+  color: #e14041;
+  text-decoration: underline;
+}
+.dl_cLeft {
+  width: 530px;
+  height: 380px;
+  background: #cccccc;
+}
+.dl_cLeft a {
+  width: 330px;
+  height: 330px;
+  display: block;
+  margin: 25px 100px;
+}
+.dl_cRight {
+  overflow: hidden;
+  margin-top: 35px;
+}
+.dl_cRight form span {
+  width: 60px;
+  display: block;
+  float: left;
+  font-size: 14px;
+}
+.dl_cRight .fault11,
+.dl_cRight .fault12,
+.dl_cRight .fault13 {
+  display: none;
+  width: 300px;
+  height: 20px;
+  padding-left: 80px;
+  line-height: 20px;
+  color: red;
+}
+.dl_f1,
+.dl_f2 {
+  overflow: hidden;
+  width: 470px;
+  margin: 10px 0;
+  line-height: 64px;
+}
+.dl_f1 input,
+.dl_f2 input {
+  width: 402px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+.dl_f3 {
+  float: left;
+  width: 470px;
+  height: 64px;
+  line-height: 64px;
+}
+.dl_f3 input {
+  width: 188px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+.dl_f3 .yanzheng {
+  display: block;
+  float: right;
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  margin-top: 20px;
+}
+.dl_f3 .genghuan {
+  width: 130px;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  float: right;
+  margin: 25px 4px;
+  cursor: pointer;
+}
+.dl_f3 .genghuan:hover {
+  text-decoration: underline;
+}
+*.dl_f4 {
+  width: 200px;
+  height: 64px;
+  float: left;
+}
+.dl_f5 {
+  clear: both;
+  width: 410px;
+  height: 22px;
+  padding-top: 34px;
+  margin-left: 60px;
+}
+.dl_f5 a {
+  color: #1f589d;
+  text-decoration: underline;
+}
+.dl_f5 a:hover {
+  color: #e04040;
+}
+.dl_f6 {
+  margin-left: 60px;
+  position: relative;
+}
+.dl_f6 input {
+  width: 405px;
+  height: 49px;
+  background: #e04040;
+  color: #ffffff;
+  font-size: 22px;
+  border: 0;
+  border-top: 1px solid #f0a0a0;
+  border-bottom: 1px solid #c11f1f;
+}
+.dl_f6 div {
+  width: 405px;
+  height: 49px;
+  background: #ffffff;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+.dl_f6:hover div {
+  display: block;
+}
+.fp1 {
+  height: 100px;
+  line-height: 100px;
+  width: 250px;
+  margin: 0 0 20px 260px;
+  font-size: 16px;
+}
+.fp1 a {
+  display: block;
+  float: left;
+  color: #666666;
+  margin-left: 10px;
+}
+.fp1 span {
+  padding-right: 10px;
+  display: block;
+  background: #cccccc;
+}
+.fp2 {
+  height: 100px;
+  line-height: 100px;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: medium none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+input {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+input::-moz-focus-inner {
+  border: medium none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset {
+  border: 0;
+}
+address,
+caption cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul,
+li {
+  list-style: none;
+  float: left;
+}
+caption,
+th {
+  text-align: left;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-size: 12px;
+  font-family: arial, "Hiragino Sans GB", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+i,
+em,
+cite {
+  font-style: normal;
+}
+body {
+  color: #cccccc;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+a {
+  color: #cccccc;
+  text-decoration: none;
+}
+input,
+textarea,
+select {
+  font-size: 100%;
+  vertical-align: middle;
+}
+/*-----------------------------------*/
+.zhu_content {
+  width: 1190px;
+  overflow: hidden;
+}
+.zhu_content form {
+  width: 575px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+.zhu_content form label {
+  display: inline-block;
+  width: 85px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.zhu_content p {
+  /*//height: 66px;*/
+  /*line-height: 66px;*/
+  width: 575px;
+  margin: 10px;
+}
+.fault1,
+.fault2,
+.fault3,
+.fault4,
+.fault6 {
+  display: none;
+  width: 300px;
+  height: 20px;
+  padding-left: 150px;
+  line-height: 20px;
+  color: red;
+}
+.fault5 {
+  display: none;
+  width: 300px;
+  height: 40px;
+  padding-left: 100px;
+  line-height: 20px;
+  color: red;
+}
+.zhu_f1 input,
+.zhu_f2 input,
+.zhu_f5 input,
+.zhu_f6 input {
+  width: 404px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.zhu_f3,
+.zhu_f4 {
+  overflow: hidden;
+}
+.zhu_f3 input,
+.zhu_f4 input,
+.zhu_f7 input {
+  /*float: left;*/
+}
+.zhu_f3 input .zhu_content,
+.zhu_f4 input .zhu_content,
+.zhu_f7 input .zhu_content {
+  width: 1190px;
+  overflow: hidden;
+}
+.zhu_f3 input .zhu_content form,
+.zhu_f4 input .zhu_content form,
+.zhu_f7 input .zhu_content form {
+  width: 575px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+.zhu_f3 input .zhu_content form label,
+.zhu_f4 input .zhu_content form label,
+.zhu_f7 input .zhu_content form label {
+  display: inline-block;
+  width: 85px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.zhu_f3 input .zhu_content p,
+.zhu_f4 input .zhu_content p,
+.zhu_f7 input .zhu_content p {
+  height: 66px;
+  line-height: 66px;
+  width: 575px;
+  margin: 10px;
+}
+.zhu_f3 input .fault1,
+.zhu_f4 input .fault1,
+.zhu_f7 input .fault1,
+.zhu_f3 input .fault2,
+.zhu_f4 input .fault2,
+.zhu_f7 input .fault2,
+.zhu_f3 input .fault3,
+.zhu_f4 input .fault3,
+.zhu_f7 input .fault3,
+.zhu_f3 input .fault4,
+.zhu_f4 input .fault4,
+.zhu_f7 input .fault4,
+.zhu_f3 input .fault6,
+.zhu_f4 input .fault6,
+.zhu_f7 input .fault6 {
+  display: none;
+  width: 300px;
+  height: 20px;
+  padding-left: 150px;
+  line-height: 20px;
+  color: red;
+}
+.zhu_f3 input .fault5,
+.zhu_f4 input .fault5,
+.zhu_f7 input .fault5 {
+  display: none;
+  width: 300px;
+  height: 40px;
+  padding-left: 100px;
+  line-height: 20px;
+  color: red;
+}
+.zhu_f3 input .zhu_f1 input,
+.zhu_f4 input .zhu_f1 input,
+.zhu_f7 input .zhu_f1 input,
+.zhu_f3 input .zhu_f2 input,
+.zhu_f4 input .zhu_f2 input,
+.zhu_f7 input .zhu_f2 input,
+.zhu_f3 input .zhu_f5 input,
+.zhu_f4 input .zhu_f5 input,
+.zhu_f7 input .zhu_f5 input,
+.zhu_f3 input .zhu_f6 input,
+.zhu_f4 input .zhu_f6 input,
+.zhu_f7 input .zhu_f6 input {
+  width: 404px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+}
+.zhu_f3 input .zhu_f3,
+.zhu_f4 input .zhu_f3,
+.zhu_f7 input .zhu_f3,
+.zhu_f3 input .zhu_f4,
+.zhu_f4 input .zhu_f4,
+.zhu_f7 input .zhu_f4 {
+  overflow: hidden;
+}
+.zhu_f3 input .zhu_f3 input,
+.zhu_f4 input .zhu_f3 input,
+.zhu_f7 input .zhu_f3 input,
+.zhu_f3 input .zhu_f4 input,
+.zhu_f4 input .zhu_f4 input,
+.zhu_f7 input .zhu_f4 input,
+.zhu_f3 input .zhu_f7 input,
+.zhu_f4 input .zhu_f7 input,
+.zhu_f7 input .zhu_f7 input {
+  float: left;
+  display: inline-block;
+  width: 187px;
+  height: 50px;
+  text-indent: 14px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+}
+.zhu_f3 input .zhu_f3 .yanzheng,
+.zhu_f4 input .zhu_f3 .yanzheng,
+.zhu_f7 input .zhu_f3 .yanzheng {
+  display: inline-block;
+  float: right;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #06089d;
+  margin: 20px 5px 0;
+  text-align: center;
+}
+.zhu_f3 input .zhu_f3 .genghuan,
+.zhu_f4 input .zhu_f3 .genghuan,
+.zhu_f7 input .zhu_f3 .genghuan {
+  width: 130px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  float: right;
+  margin: 25px 45px 0 5px;
+  cursor: pointer;
+}
+.zhu_f3 input .zhu_f3 .genghuan:hover,
+.zhu_f4 input .zhu_f3 .genghuan:hover,
+.zhu_f7 input .zhu_f3 .genghuan:hover {
+  text-decoration: underline;
+}
+.zhu_f3 input .zhu_f4 button,
+.zhu_f4 input .zhu_f4 button,
+.zhu_f7 input .zhu_f4 button {
+  margin-left: 10px;
+  width: 106px;
+  height: 24px;
+  border: 1px solid #cccccc;
+  background: #f7f7f7;
+}
+.zhu_f3 input .zhu_f4 button:hover,
+.zhu_f4 input .zhu_f4 button:hover,
+.zhu_f7 input .zhu_f4 button:hover {
+  border: 1px solid #e04040;
+  text-decoration: underline;
+}
+.zhu_f3 input .zhu_f8,
+.zhu_f4 input .zhu_f8,
+.zhu_f7 input .zhu_f8 {
+  height: 60px;
+  line-height: 60px;
+  padding-top: 10px;
+  margin-left: 110px;
+}
+.zhu_f3 input .zhu_f8 a,
+.zhu_f4 input .zhu_f8 a,
+.zhu_f7 input .zhu_f8 a {
+  text-decoration: underline;
+  color: #e04040;
+}
+.zhu_f3 input .zhu_f9,
+.zhu_f4 input .zhu_f9,
+.zhu_f7 input .zhu_f9 {
+  margin-left: 95px;
+  position: relative;
+}
+.zhu_f3 input .zhu_f9 input,
+.zhu_f4 input .zhu_f9 input,
+.zhu_f7 input .zhu_f9 input {
+  width: 405px;
+  height: 49px;
+  background: #e04040;
+  color: #ffffff;
+  font-size: 22px;
+  border: 0;
+  border-top: 1px solid #f0a0a0;
+  border-bottom: 1px solid #c11f1f;
+}
+.zhu_f3 input .zhu_f9 div,
+.zhu_f4 input .zhu_f9 div,
+.zhu_f7 input .zhu_f9 div {
+  width: 405px;
+  height: 49px;
+  background: #ffffff;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+.zhu_f3 input .zhu_f9:hover div,
+.zhu_f4 input .zhu_f9:hover div,
+.zhu_f7 input .zhu_f9:hover div {
+  display: block;
+}
+.zhu_f3 input .zhu_f10 a,
+.zhu_f4 input .zhu_f10 a,
+.zhu_f7 input .zhu_f10 a {
+  display: block;
+  height: 46px;
+  font-size: 14px;
+  color: #06089d;
+  margin-left: 105px;
+}

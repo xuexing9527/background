@@ -1,0 +1,802 @@
+.functionleft{
+    width: 370px;
+    height: 490px;
+    float: left;
+}
+
+.functionleft .funcminbox {
+    width: 330px;
+    height: 460px;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+.functionleft .analysis-resultbox{
+    width: 330px;
+    height: 324px;
+    margin-top: 35px;
+    float: left;
+    margin-left: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.functionleft .analysis-resultbox .analysis-font{
+display: block;
+width: 308px;
+height: 50px;
+line-height: 50px;
+font-size: 20px;
+border-bottom: 1px solid #d9d9d9;
+font-weight: bolder;
+background: #F8F8F8;
+padding-left: 20px;
+color: #6d7e8a;
+background: -webkit-linear-gradient(top,#fff,#f3f3f3);
+}
+
+.anlysis-lione{
+    width: 288px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 32px;
+    line-height: 32px;
+}
+.func_sql{
+    color: #7d909e;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    width: 100px;
+    float: left;
+}
+
+.functionleft .analysis-resultbox .analysis-result{
+    width: 330px;
+    height: 273px;
+    border-radius: 5px;
+    background: #eee;
+    overflow: overlay;
+}
+.functionleft .analysis-resultbox  .analysis-result .result-box{
+    width: 310px;
+    height: 329px;
+    background: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.functionleft .analysis-resultbox  .analysis-result .result-box .box-count{
+    width: 310px;
+    background: #FFFFFF;
+}
+.functionleft .analysis-resultbox  .analysis-result .result-box .box-count .anlysis-boxone{
+
+    width: 310px;
+}
+.functionleft .analysis-resultbox  .analysis-result .result-box .box-count .anlysis-lione{
+    width: 310px;
+    /*float: left;*/
+    margin-bottom: 10px;
+}
+.functionleft .analysis-resultbox  .analysis-result .result-box .box-count .anlysis-lione .mission{
+    display: block;
+    width: 185px;
+    height: 32px;
+    /* border: 1px solid #d9d9d9; */
+    float: left;
+    line-height: 32px;
+    padding-left: 15px;
+}
+
+.analysis-result .result-box .box-count .anlysis-lione .boxone1 .lione1{
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background: red;
+}
+.boxone1{
+    width: 310px;
+    display: none;
+}
+
+
+.func_box{
+    height: 32px;
+    background: rebeccapurple
+}
+
+.anlysis-boxone{
+    width: 290px;
+    padding: 20px 20px 0 20px;
+    background: #eee;
+}
+
+
+.analysis-result .result-box .box-count .anlysis-lione .symbol{
+    display: block;
+    width: 20px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+.analysis-result .result-box .box-count .anlysis-lione .boxone1 .lione1 .analysis-count{
+    float: left;
+    display: block;
+    line-height: 30px;
+    padding-left: 50px;
+    color: #6d7e8a;
+}
+.waitanlysis {
+    display: block;
+    width: 308px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: bolder;
+    background: #F8F8F8;
+    padding-left:20px;
+    color: #6d7e8a;
+    background: -webkit-linear-gradient(top,#fff,#f3f3f3);
+}
+.functionright {
+    width: 650px;
+    height: 1300px;
+    border: 1px solid #d9d9d9;
+    float: right;
+    margin-left: 10px;
+    margin-right: 60px;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+#anlysisrighttop {
+    height: 370px;
+    background: #FFFFFF;
+}
+/*.anlysistop {
+	width: 100%;
+	height: 30px;
+}*/
+/*表单*/
+.anlysislistbox {
+    /*width: 600px;*/
+    /*height: 370px;*/
+    margin-left:30px ;
+}
+.anlysislistbox .anlysistopform {
+    /*width: 600px;*/
+    /*height: 310px;*/
+    float: left;
+}
+.anlysislistbox .anlysistopform .anlysis_ul{
+    width: 570px;
+    height:300px;
+    padding-left: 50px;
+    float: left;
+    padding-top: 12px;
+}
+.anlysislistbox .anlysistopform .anlysis_ul li{
+    width: 570px;
+    height: 60px;
+    line-height: 60px;
+}
+.anlysis_ul_ul{
+    width: 570px;
+    height:80px;
+    padding-left: 50px;
+    float: left;
+}
+.anlysis_ul_ul li{
+    width: 570px;
+    height: 60px;
+    line-height: 60px;
+}
+.anlysislistbox .anlysistopform .anlysis_ul li label{}
+.anlysislistbox .anlysistopform .anlysis_ul li .input-1{
+    margin: -2px 0 0 36px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    height: 38px;width: 288px;
+}
+.anlysis_ul_ul li .allAnlysis{
+    width: 60px;
+    height: 38px;
+    margin-left: 24px;
+    margin-top: -2px;
+    background: #13815F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.anlysis_ul_ul li .allAnlysis:hover{
+    width: 60px;
+    height: 38px;
+    margin-left: 24px;
+    margin-top: -2px;
+    background: #22AF90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.functionright .anlysis-tablebox{
+    width: 650px;
+    height:300px;
+    margin-top: 12px;
+}
+.textones {
+    width: 180px;
+    height: 30px;
+    margin-right:75px;
+    /*border: none;*/
+    padding: 0;
+    padding-left: 10px;
+}
+.theme {
+    width: 130px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+.anlysistime {
+    width: 130px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+.anlysisovertime {
+    width: 130px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+.btnones {
+    width: 130px;
+    height: 30px;
+}
+.funanlysis {
+    width: 620px;
+    height: 50px;
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 30px;
+    line-height: 50px;
+    border-bottom: 1px solid #BCBCBC;
+    color: #6d7e8a;
+    background: -webkit-linear-gradient(top,#fff,#f3f3f3);
+}
+
+
+.anlysisResult {
+    width: 1000px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    margin-left: 80px;
+}
+.resultspan {
+    display: block;
+    float: left;
+}
+.btnpic {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 30px;
+}
+.resultbox {
+    width: 590px;
+    height: 360px;
+    float: left;
+    margin-left: 30px;
+    border: 1px solid #d9d9d9;
+    overflow: auto;
+    /* margin: 0 auto; */
+    /*text-align: center;*/
+    /*line-height: 358px;*/
+    /*font-size: 16px;*/
+}
+
+#resultdefault{
+    width: 564px;
+    height: 330px;
+    border: 1px solid #d9d9d9;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 16px;
+
+}
+#resultecharts {
+    display: none;
+    width: 564px;
+    height: 330px;
+    border: 1px solid #d9d9d9;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 16px;
+}
+
+#resultecharts-trend{
+
+    width: 418px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    margin-top: 25px;
+    display: none;
+}
+#resultecharts-map{
+    display: none;
+    width: 564px;
+    height: 330px;
+    border: 1px solid #d9d9d9;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 16px;
+}
+
+
+.echattfunctionbox {
+    width: 567px;
+    height: 410px;
+    margin-left: 31px;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
+.functionresult {
+    width: 420px;
+    height: 150px;
+    border: 1px solid #D9D9D9;
+    border-right: none;
+    border-left: none;
+}
+/*按钮*/
+.resultbtn {
+    width: 512px;
+    height: 40px;
+    float: left;
+    margin-left: 138px;
+    margin-top: 10px;
+}
+.keep {
+    width: 100px;
+    height: 33px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 8px;
+    background: #13815F;
+    border: 1px solid #d9d9d9;
+    color: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+
+.keep:hover {
+    width: 100px;
+    height: 33px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 8px;
+    background: #22AF90;
+    border: 1px solid #d9d9d9;
+    color: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+
+#func_sql{
+    margin-left: 37px;
+    border-radius: 5px;
+    height: 42px;
+    padding-left: 10px;
+    width: 305px;
+    border: 2px solid #e5e5e5;
+}
+.nokeep {
+    width: 100px;
+    height: 33px;
+    float: left;
+    margin-left:15px;
+    margin-top: 8px;
+    background: #13815F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+
+
+.nokeep:hover {
+    width: 100px;
+    height: 33px;
+    float: left;
+    margin-left:15px;
+    margin-top: 8px;
+    background: #22AF90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 4px;
+    /* Firefox*/
+    -webkit-border-radius: 4px;
+    /* Safari 和 Chrome*/
+    /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器*/
+}
+
+
+
+
+/*中间*/
+.btnchose {
+    width: 308px;
+    height: 48px;
+    margin-left: 10px;
+    line-height: 48px;
+}
+.all {
+    width: 60px;
+    height: 30px;
+    border: none;
+    background: #f9f9f9;
+    border-radius: 5px;
+    color: #6d7e8a;
+}
+.deleat {
+    width: 50px;
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    background: #13815F;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 26px;
+    margin-left: 116px;
+    margin-top: -2px;
+}
+
+.deleat:hover{
+    width: 50px;
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    background: #22AF90;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 26px;
+    margin-left: 116px;
+    margin-top: -2px;
+}
+
+
+
+
+.deleat1 {
+    width: 50px;
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    background: #1b997a;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 26px;
+    margin-left: 100px;
+    margin-top: -2px;
+}
+
+
+.deleat1:hover {
+    width: 50px;
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    background: #1b997a;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 26px;
+    margin-left: 100px;
+    margin-top: -2px;
+}
+
+
+.biao {
+    width: 615px;
+    height: 310px;
+    /*margin-top: 50px;*/
+    /*margin-left: 50px;*/
+}
+.biao li {
+    width: 400px;
+    height: 50px;
+    /*margin-bottom: 25px;*/
+    line-height: 50px;
+}
+.textt {
+    width: 300px;
+    height: 30px;
+}
+
+/*样式参考*/
+
+a {
+    text-decoration: none;
+}
+/*数据表*/
+.datalist{
+    height: 350px;
+    overflow:auto;
+}
+.datalist table {
+    width: 310px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #d9d9d9;
+}
+.datalist table tr {
+    width: 100%;
+    height: 38px;
+}
+.datalist table tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+.datalist table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+.td1 {
+    width: 40px;
+    height: 20px;
+}
+.tdd1{
+     text-align: left;
+
+}
+.tddd1{
+
+
+}
+
+#func_delete{
+     width: 50px;
+     height: 26px;
+     font-size: 14px;
+     border: none;
+     background: #13815F;
+     border-radius: 5px;
+     color: #fff;
+     line-height: 26px;
+ }
+
+#func_delete:hover{
+    width: 50px;
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    background: #22AF90;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 26px;
+}
+
+.btnthones {
+    width:20px;
+    height: 20px;
+}
+.btntwos,.btnthirds,.btnfours,.btnfifths,.btnsixs,.btnsevens {
+    width:50px;
+    /*margin-left:55px;*/
+}
+.choseone {
+    width:67px;
+    height: 42px;
+}
+/*.opt1,.opt2,.opt3,.opt4,.opt5,.opt6 {
+	margin-left: 45px;
+}*/
+/*数据表结束*/
+.query_footer_right {
+    color: #666666;
+    text-align: center;
+    margin-top: 14px;
+}
+.query_footer_right span.page>a {
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 2px;
+    display: inline-block;
+    color: #666666;
+    border: 1px solid #DADADA;
+    text-decoration: none;
+}
+.query_footer_right span.page>a:hover {
+    background-color: #7D909F;
+    color: #fff;
+}
+
+#func_table{
+    width:530px;
+}
+
+#func_table thead{
+
+}
+
+#func_table thead tr{
+
+}
+
+#func_table thead th{
+
+}
+
+
+#func_table tbody{
+
+}
+
+#func_table tbody tr{
+
+}
+
+#func_table tbody td{
+    text-align: center;
+}
+
+#func_popup{
+    width: 630px;margin:0 auto;
+    display: none;
+}
+#func_popup_table{
+    width: 630px;
+    text-align: center;
+}
+#func_popup_table_tbody{
+
+}
+
+
+.input-1{ padding-left: 15px;}
+.popup_search{display: block;}
+
+
+
+.currentcolor{
+    background: #999;
+    height: 40px;
+    width: 110px;
+    color:#fff;
+}
+
+.currentcolor:hover{
+    background: #999;
+    height: 40px;
+    width: 110px;
+    color:#fff;
+}
+
+.echattfunctionbox .function-tablebox{
+    width: 440px;
+    height: 41px;
+}
+.echattfunctionbox .function-tablebox .function-show{
+    display: block;
+    float: left;
+    height: 41px;
+    text-align: center;
+    line-height: 40px;
+}
+.function-libox{
+    width: 446px;
+    height: 41px;
+    float: left;
+    margin-left: 56px;
+}
+.function-liboxul{
+    width: 335px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+    border-right: none;
+    font-size: 12px;
+    margin-left: 60px;
+
+}
+.function-liboxul li{
+    float: left;
+    width: 110.5px;
+    height: 40px;
+    border-right: 1px solid #d9d9d9;
+}
+.function-liboxul a{
+    float: left;
+    width: 110.5px;
+    height: 40px;
+    border-right: 1px solid #d9d9d9;
+    cursor:pointer;
+}
+
+.function-liboxul a:hover{
+    float: left;
+    width: 110.5px;
+    height: 40px;
+    border-right: 1px solid #d9d9d9;
+    cursor:pointer;
+}
+
+
+
+.functionresult {
+    width: 420px;
+    height: 150px;
+    border: 1px solid #D9D9D9;
+    border-right: none;
+    border-left: none;
+}
+
+
+.func_sqlstyle{
+    color: #7d909e;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    width: 100px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+

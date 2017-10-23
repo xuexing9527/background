@@ -1,0 +1,35 @@
+include ../partial/header
+link(rel='stylesheet', href='/stylesheets/common/common.css')
+link(rel='stylesheet', href='/stylesheets/part/csg_reportDetails.css')
+link(rel='stylesheet', href='/stylesheets/part/jquery.page.css')
+include ../partial/commonhead
+
+div#anlysisbox.clearfix
+    include ../partial/reportQuery_left
+    #anlysisright
+        ul#anlysisrighttop
+            li
+                span 主题名称：
+                em 这里是返回信息
+            li
+                span 主题描述：
+                em 这里是返回信息
+            li
+                span 主题结论：
+                em 这里是返回信息
+            dl
+                h2 分析结果1：
+                .fenxijieguo1 这里放内容
+            dl
+                h2 分析结果1：
+                .fenxijieguo1 这里放内容
+
+
+
+
+include ../partial/commonfoot
+include ../partial/footer
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_reportDetails.js")
+script(type="text/javascript").
+    CSG.port.csg_reportDetails.init();
+

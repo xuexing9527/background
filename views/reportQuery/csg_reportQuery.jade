@@ -1,0 +1,439 @@
+extends ../partial/reportQuery_left
+block append right
+    div.right
+        div.query_content
+            div.query_content_title
+                input(type="text" name="query_keywords" id="query_keywords" value="输入关键字").query_title_common.query_title_width01
+                select(name="query_type" id="query_type").query_title_common.query_title_width01
+                    option 汽车（主题）
+                    option 手机（主题）
+                    option 电器（主题）
+                    option 玩具（主题）
+                    option 游艇（主题）
+                select(name="query_starttime" id="query_starttime").query_title_common.query_title_width02
+                    option 开始日期
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                select(name="query_endtime" id="query_endtime").query_title_common.query_title_width02
+                    option 结束日期
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                a(href="javascript:void(0)") 查询
+            div.query_content_content
+                div.query_content_content_header
+                    p 报告查询
+                div.query_content_content_content
+                    table#query_table(border="1" cellpadding="0" cellspacing="0")
+                        thead
+                            tr
+                                th.query_th01 选择
+                                th.query_th02 名称
+                                th.query_th03 状态
+                                th.query_th04 创建日期
+                                th.query_th05 行业
+                                th.query_th06 操作
+                        tbody#query_tbody
+                            tr
+                                td
+                                    input(type="checkbox" id="query_checkbox" name="query_checkbox")
+                                td 安全问题成电动车发展“绊脚石”
+                                td 已经发布
+                                td 2017-01-05
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="query_description") 查看
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 五菱宏光车主画像
+                                td 已经发布
+                                td 2016-12-23
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="query-check") 查看
+
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 新能源汽车生产及销售情况
+                                td 已经发布
+                                td 2016-03-03
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="") 正在生成中
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 2016年1-6月国内新能源汽车
+                                td 已经发布
+                                td 2016-06-25
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="") 正在生成中
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务1
+                                td 已经发布
+                                td 2016-07-03
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="") 正在生成中
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务2
+                                td 已经发布
+                                td 2016-11-05
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="") 正在生成中
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务3
+                                td 已经发布
+                                td 2016-12-03
+                                td 汽车
+                                td
+                                    a(href="javascript:void(0)" class="") 正在生成中
+                div.query_content_content_footer.clearfix
+                    div.query_footer_left
+                        a#checkAll(href="javascript:void(0)") 全选
+                    div.query_footer_right
+                        span.page
+                            a(href='javascript:;') <
+                            a(href='javascript:;') 1
+                            a(href='javascript:;') 2
+                            a(href='javascript:;') 3
+                            a(href='javascript:;') 4
+                            span ...
+                            a(href='javascript:;') >
+                div.query_popup
+
+                    .query-box
+                        .query-theme
+                            .query-namebox
+                                span.query-name 报告名称：
+                                em.query_title 安全问题成电动车发展“绊脚石”
+                            a.Print(href="javascript:;") 打印
+                            .query-typebox 报告类型：
+                                span.query-type
+                                em.query_title 汽车
+                        .query-ulbox
+                            ul.queryul
+                                li.queryli
+                                    div.onesBox
+                                        span.query-sale 1. 新能源汽车生产及销售情况
+                                        table.query-table(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.query-tbody
+                                                tr
+                                                    td 时间
+                                                    td 生产（万）
+                                                    td 销售（万）
+                                                    td 增长率
+                                                tr
+                                                    td 2016年上半年
+                                                    td 21.5
+                                                    td 20.7
+                                                    td 119.80%
+                                                tr
+                                                    td 2015年上半年
+                                                    td 9.78
+                                                    td 9.29
+                                                    td 122.80%
+                                        div.query-echartsOnes
+                                            div(style="height:340px;width:500px;display:block")#query-bar
+
+                                li.queryli
+                                    div.twosBox
+                                        span.query-sale 2. 新能源汽车安全事故情况
+                                        table.query-table(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.query-tbody
+                                                tr
+                                                    td 时间
+                                                    td 2015前
+                                                    td 2015
+                                                    td 2016
+                                                tr
+                                                    td 事故数量
+                                                    td 6
+                                                    td 17
+                                                    td 8
+
+                                        div.query-echartsOnes
+                                            div#query-pie
+                                li.queryli
+                                    div.threeBox
+                                        span.query-sale 3. 电动汽车安全事故的诱因
+                                        table.query-table(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.query-tbody
+                                                tr
+                                                    td 事故原因
+                                                    td 泡水
+                                                    td 充电
+                                                    td 其它零部件
+                                                    td 碰撞
+                                                    td 自燃
+                                                    td 不明原因
+                                                tr
+                                                    td 数量
+                                                    td 13
+                                                    td 16
+                                                    td 16
+                                                    td 17
+                                                    td 23
+                                                    td 14
+
+                                        div.query-echartsOnes
+                                            div#query-piethree
+                                li.queryli
+                                    div.fourBox
+                                        span.query-sale 4. 2016年1-6月国内新能源汽车起火事件区域
+                                        table.query-table(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.query-tbody
+                                                tr
+                                                    td 时间
+                                                    td 地点
+                                                    td 品牌
+                                                    td 车企
+                                                    td 车辆类型
+                                                    td 起火原因
+                                                tr
+                                                    td 2016年1月31日
+                                                    td 余干县
+                                                    td 宇通
+                                                    td 宇通
+                                                    td 客车
+                                                    td 被引燃
+                                                tr
+                                                    td 2016年2月22日
+                                                    td 北京
+                                                    td 金杯
+                                                    td 华晨金杯
+                                                    td 专用车
+                                                    td 充电中自燃
+                                                tr
+                                                    td 2016年5月14日
+                                                    td 珠海
+                                                    td 银隆
+                                                    td 银隆新能源公司
+                                                    td 客车
+                                                    td 或电池短路
+                                                tr
+                                                    td 2016年5月29日
+                                                    td 北京
+                                                    td BJ6123EVCA
+                                                    td 福田汽车
+                                                    td 客车
+                                                    td 空调系统故障
+                                                tr
+                                                    td 2016年6月3日
+                                                    td 上海
+                                                    td 荣威e550
+                                                    td 上汽
+                                                    td 乘用车
+                                                    td 拖线板过热导致内饰燃烧
+
+                                                tr
+                                                    td 2016年6月26日
+                                                    td 北京
+                                                    td IEV5
+                                                    td 江淮
+                                                    td 乘用车
+                                                    td 未披露
+                                        div.query-echartsOnes
+                                            div#query-map
+                .query_checkBomb
+                    .query-report-box
+                        .query-report
+                            .query-namebox
+                                .query-butn
+                                    span.query-name 报告名称：
+                                    em.query_title 五菱宏光车主画像
+                                a.Print(href="javascript:void(0)") 打印
+                            .query-typebox 报告类型：
+                                span.query-type
+                                em.query_title 汽车
+                        .query-report-ulbox
+                            ul.report-queryul
+                                li.report-queryli
+                                    div.report-onesBox
+                                        span.report-query-sale 1. 新能源汽车生产及销售情况
+                                        table.report-query-table(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.report-query-tbody
+                                                tr
+                                                    td 销量排名
+                                                    td 车系
+                                                    td 官方价
+                                                    td 从属品牌
+                                                    td 11月销量
+                                                    td 1-11月累计销量
+                                                tr
+                                                    td 1
+                                                    td 五菱宏光S
+                                                    td 4.18-7.93万
+                                                    td 五菱
+                                                    td 68025
+                                                    td 254298
+                                                tr
+                                                    td 2
+                                                    td 宝骏730
+                                                    td 6.08-9.28万
+                                                    td 宝骏
+                                                    td 44365
+                                                    td 320041
+                                                tr
+                                                    td 3
+                                                    td 北汽幻速H3
+                                                    td 5.58-6.28万
+                                                    td 北汽幻速
+                                                    td 11088
+                                                    td 94301
+                                                tr
+                                                    td 4
+                                                    td 欧诺
+                                                    td 3.59-5.39万
+                                                    td 长安商用
+                                                    td 10550
+                                                    td 142603
+                                                tr
+                                                    td 5
+                                                    td 欧尚
+                                                    td 5.19-6.49万
+                                                    td 长安商用
+                                                    td 10477
+                                                    td 108129
+                                                tr
+                                                    td 6
+                                                    td 别克GL8
+                                                    td 20.90-44.99万
+                                                    td 别克
+                                                    td 9030
+                                                    td 70546
+                                                tr
+                                                    td 7
+                                                    td 菱智
+                                                    td 4.99-9.99万
+                                                    td 东风风行
+                                                    td 7065
+                                                    td 87110
+                                                tr
+                                                    td 8
+                                                    td 风光330
+                                                    td 3.68-5.39万
+                                                    td 东风风光
+                                                    td 7010
+                                                    td 88923
+                                                tr
+                                                    td 9
+                                                    td 风光370
+                                                    td 5.59-6.99万
+                                                    td 东风风光
+                                                    td 5769
+                                                    td 62083
+                                                tr
+                                                    td 10
+                                                    td 奥德赛
+                                                    td 22.98-35.48万
+                                                    td 本田
+                                                    td 4584
+                                                    td 34584
+                                        div.query-eOnes
+                                            div#query-pies
+
+                                li.report-queryli2
+                                    div.report-twosBox
+                                        span.report-query-sale2 2. 五菱宏光车主年龄分布
+                                        table.report-query-table2(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.report-query-tbody2
+                                                tr
+                                                    td 年龄段
+                                                    td 18-20岁
+                                                    td 21-25岁
+                                                    td 26-30岁
+                                                    td 30岁以上
+                                                tr
+                                                    td 人数
+                                                    td 14
+                                                    td 38
+                                                    td 24
+                                                    td 9
+                                        div.query-etwos
+                                            div#query-bars
+                                li.report-queryli3
+                                    div.report-threBox
+                                        span.report-query-sale3 3. 五菱宏光车主驾龄分布
+                                        table.report-query-table3(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.report-query-tbody3
+                                                tr
+                                                    td 驾龄
+                                                    td 0-1年
+                                                    td 1-5年
+                                                    td 5年以上
+                                                tr
+                                                    td 人数
+                                                    td 19
+                                                    td 17
+                                                    td 20
+                                        div.query-ethres
+                                            div#query-pie3
+                                li.report-queryli4
+                                    div.report-fouBox
+                                        span.report-query-sale4 4. 五菱宏光车主买车用途
+                                        table.report-query-table4(border="1" cellpadding="0" cellspacing="0")
+                                            tbody.report-query-tbody4
+                                                tr
+                                                    td 用途
+                                                    td 电工
+                                                    td 代步
+                                                    td 记者
+                                                    td 拉货
+                                                    td 装机
+                                                    td 装修
+                                                    td 通讯
+                                                        td 快递
+                                                    td 拉客
+                                                    td 自营
+
+                                                tr
+                                                    td 人数
+                                                    td 2
+                                                    td 5
+                                                    td 1
+                                                    td 9
+                                                    td 2
+                                                    td 5
+                                                    td 1
+                                                    td 1
+                                                    td 4
+                                                    td 7
+                                        div.query-efous
+                                            div#query-radar
+                                .function-fif
+                                    span.himg 5.五菱宏光车主画像
+                                    div.imgbox
+                                        div.imgleft
+                                            img(src="/images/static/csg-reportQuery/u1137.jpg")
+
+                                        div.imgright
+                                            img(src="/images/static/csg-reportQuery/u1139.jpg")
+                                    div.cicty
+                                        span.pic 车主画像：
+                                        p 买五菱宏光的车主，大部分以中青年为主，年龄大概在20-30岁之间。
+                                        p 他们刚刚从校园进入社会不久，买车主要是为了方便工作，比如拉货、装修等。
+                                        p 他们大部分从事自营或体力劳动，希望能够通过自己的努力改善自己或家庭的生活。不同于朝九晚五的上班族生活，他们大部分都没有固定的上班时间，挣钱多少和辛苦程度有很大关系。但他们都很乐观，积极向上。
+                                        p 综上所述，五菱宏光的用户群主要还是针对年青人居多，经济条件不算太好，以自由职业和工农居多，他们对购车的要求是：车价低，性能好，实用性强。
+
+        .csg_reportQuery(style="display:none")
+            link(rel='stylesheet', href='/stylesheets/part/csg_reportQuery.css')
+            script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_reportQuery.js")
+            script(type="text/javascript").
+                CSG.port.csg_reportQuery.init();
+            script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_reportQuery_echarts.js")
+            script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_reportQuery_map.js")
+            script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/map/js/china.js")

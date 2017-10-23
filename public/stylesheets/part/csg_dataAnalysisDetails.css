@@ -1,0 +1,40 @@
+
+#anlysisbox{width: 100%;height: 1000px;
+    background: lightblue;}
+#anlysisleft{width: 20%;height: 1000px;background: #708090;float: left;}
+#anlysisright{width: 80%;height: 1000px;float: left;}
+#anlysisrighttop{width: 1572px;height: 450px;background: lightblue;padding-left: 50px;float: left;}
+.anlysistop{width: 100%;height: 80px;}
+/*表单*/
+.anlysistopform{line-height: 80px;}
+.textones{width: 180px;height: 30px;margin-right: 100px;/*border: none;*/padding: 0;padding-left: 10px;}
+.theme{width: 180px;height: 30px;margin-right: 100px;padding-left: 10px;}
+.anlysistime{width: 180px;height: 30px;padding-left: 10px;}
+.anlysisovertime{width: 180px;height: 30px;margin-right: 135px;padding-left: 10px;}
+.btnones{width: 150px;height: 30px;}
+/*表单结束,实时数据开始*/
+.anlysisnumber{width: 300px;height: 350px;border: 1px solid black;float: left;}
+.datalist{width: 915px;height: 300px;border: 1px solid black;/*float: left;*/margin-left: 30px;/*position: relative;*/}
+.datalist table{border: 0.5px; width: 915px;height: 300px; padding: 0; text-align: center; /*float: left;*/ /*position: absolute;top: 0;left: 0;*/}
+.listtable form{width:100px;}
+.btnthones{width:210px;height: 42px;}
+.btntwos,.btnthirds,.btnfours,.btnfifths,.btnsixs,.btnsevens{width:100px;margin-left:55px;}
+.choseone{width:67px;height: 42px;}
+.opt1,.opt2,.opt3,.opt4,.opt5,.opt6{margin-left: 45px;}
+/*数据表结束*/
+.bigbox{width:1522px;height: 370px;}
+.spanone{font-size: 18px;display: block;margin-top: 20px;margin-left: 20px;}
+.spantwo{text-align: center;font-size: 18px;display: block;line-height: 280px;font-family: "微软雅黑";}
+.btnbox{width: 160px;height: 50px;float: left;}
+.btneighth{margin-left: 20px; margin-top: 20px;width: 150px;height: 40px;border: 1px solid lightblue;border-radius: 4px;-moz-border-radius: 4px; /* Firefox */-webkit-border-radius: 4px; /* Safari 和 Chrome */border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}/*echarts图*/
+.buttomechart{width:1522px;height: 550px;background: lightblue;padding: 0;}
+#leftsex{width: 761px;height: 550px;background: papayawhip;float: left;}
+#rightcount{width: 761px;height: 550px;background: peachpuff;float: right;display: inline-block;}
+/*左边内容*/
+.leftlist{width: 380px;height: 600px;margin-top: 20px;}
+.leftlistul{width: 380px;height: 600px;font-size: 24px;color: white;}
+.leftlistul li{width: 380px;height: 100px;line-height: 100px;text-align: center;margin-bottom:20px ;}
+.ul_content_part01{width: 1000px;font-size: 0;}
+.ul_content_part01 li{height: 50px;width: 320px;font-size: 24px;display: inline-block;}
+.ul_content_part01 li span{}
+.ul_content_part01 li i{}

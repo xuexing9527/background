@@ -1,0 +1,32 @@
+.common_header
+    .top
+        .logobox
+            img(src='/images/static/commons/csg.png')
+        .nav
+            ul.navul#navul
+                li.lione
+                    a(href='/user/rendering/home') 首页
+                li.litwo#litwo
+                    a(href='/dataAnalysis/rendering/dataAnalysis') 数据分析
+                li.lithree#lithree
+                    a(href='/crawlers/rendering/taskList') 数据获取
+                li.lifouth#lifouth
+                    a(href='/reportQuery/rendering/reportQuery') 报告查询
+        .adminbox
+            span.addm#nicknames
+            h2(style="dispaly:none")#permission
+            ul.adminboxul
+                li
+                    a(href='javascript:void(0);') 设置
+                li
+                    p |
+                li
+                    a(href='javascript:void(0);' id="clear_cookie_out") 退出
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_common.js")
+        script(type="text/javascript").
+            CSG.port.csg_common.init();
+
+
+
+
+

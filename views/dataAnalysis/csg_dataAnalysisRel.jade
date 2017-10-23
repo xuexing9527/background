@@ -1,0 +1,77 @@
+extends ../partial/dataAnalysis_left
+block append right
+    .right
+        .anlysisBreadcrumb_navigation
+            a(href="http://127.0.0.1:9298/dataAnalysis/rendering/dataAnalysis") 数据分析
+            i  >
+            a(href="javascript:void(0)" id="an_miabao").car_crawlers
+
+        #count
+            .relPop
+                p.relpppp
+                    span 关系维度:
+                    select.relselectw
+                        option(value="1") 一维关系
+                        option(value="2") 二维关系
+                        option(value="3") 三维关系
+                    span 关系性质:
+                    select.relselectx
+                        option(value=" ") 全部
+                        option(value="1") 到店营销活动
+                        option(value="2") 邀约线下活动
+                        option(value="3") 车主俱乐部
+                        option(value="4") 高尔夫俱乐部
+                        option(value="5") 收藏俱乐部
+                        option(value="6") 红酒俱乐部
+                        option(value="7") 马会
+                        option(value="8") 游艇会
+                        option(value="9") 三年以上驾龄
+                        option(value="10") 个人年收入大于300万
+                        option(value="11") 家庭年收入大于800万
+                        option(value="12") 有换车意愿
+                        option(value="13") 银行高端信用卡
+                        option(value="14") 储蓄卡用户
+                        option(value="15") 奢饰品牌高端会员
+                        option(value="16") 身体状况良好
+                        option(value="17") 健身达人
+                        option(value="18") 奢侈品爱好者
+                        option(value="19") 收藏爱好者
+                        option(value="20") K歌之王
+                        option(value="21") 阅读爱好者
+                        option(value="22") 电影达人
+                    span
+                        a(href="javascript:void(0)" id="rel_sub") 立即执行
+                #relCanvas 暂无数据
+        #An_search_info_tab
+            div.search_info_title
+                ul.search_info_title_ul
+                    li
+                        span 表名称:
+                        i.car_crawlers
+                    li
+                        span 数量:
+                        i.car_counts
+                    li
+                        span 导入时间:
+                        i.import_time
+            div.search_info_content
+                div.search_info_box
+                    table#search_info_table(border="1" cellpadding="0" cellspacing="0")
+                        thead
+                            tr
+                                th.search_info_table_th01 选择
+                                th.search_info_table_th02 姓名
+                                th.search_info_table_th03 性别
+                                th.search_info_table_th04 年龄
+                                th.search_info_table_th05 行业
+                        tbody#search_info_table_tbody
+                    div.search_info_box_footer.clearfix
+                        div.pager.pager02
+                    a.relbtntwos(href="javascript:void(0)" id="rel_keep") 关系族群
+            //.relBread
+    .csg_dataAnalysisRel(style="display:none")
+        link(rel='stylesheet', href='/stylesheets/part/csg_dataAnalysisRel.css')
+        script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/dist/extension/dataTool.min.js")
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_dataAnalysisRel.js")
+        script(type="text/javascript").
+            CSG.port.csg_dataAnalysisrel.init();

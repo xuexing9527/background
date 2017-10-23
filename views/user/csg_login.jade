@@ -1,0 +1,21 @@
+include ../partial/header
+link(rel='stylesheet', href='/stylesheets/part/csg_login.css')
+include ../partial/footer
+div.login
+    h1 登录
+    form(method="post" id="Form_login")
+        p
+            label( for="login_username")
+            input( type="text" name="login_username" placeholder="用户名" id="login_username")
+        p
+            label( for="login_password")
+            input( type="password" name="login_password" placeholder="密码" id="login_password")
+        p
+            input.check(name="login_remember" type="checkbox" id="login_remember")
+            label( for="login_remember").option 记住密码
+        p
+            label( for="login_submit")
+            button( type="submit" name="login_submit" class="btn btn-primary btn-block btn-large" id="login_submit" ) 登录
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_login.js")
+script(type="text/javascript").
+    CSG.port.csg_login.init();

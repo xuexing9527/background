@@ -1,0 +1,29 @@
+extends ./../partial/crawlers_left
+block right
+    .right
+        .xxmodal#xxmodal
+        .csgx_instencelist
+            .detailPop#grapPop
+                .close(onclick="document.getElementById('grapPop').style.display='none',document.getElementById('xxmodal').style.display='none'") X
+                .popContainer
+                    h1 详情
+                    .header
+                        .taskDetail#grapDetailTop
+                            ul.clearFloat
+                    .bottom#grapText
+                    .exampleOverview
+            .bread
+                a(href="/crawlers/rendering/taskList") 任务列表&nbsp;
+                span > 实例列表
+            .container
+                .teskDetail#taskContent
+                    | 任务详情 :
+                .instenceList
+                    h2
+                        b 已运行实例 ：
+                        a(href="javascript:;") 全选
+                        a(href="javascript:;") 分析选中实例
+                    ul.list#instanceList
+                        | 实例列表
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/src/jquery.page.js")
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/crawlers/instenceList.js")

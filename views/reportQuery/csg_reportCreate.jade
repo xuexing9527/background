@@ -1,0 +1,238 @@
+extends ../partial/reportQuery_left
+block append right
+    div.right
+        div.create_content
+            div.content_title
+                p 创建报告
+            div.content_content
+                form#create_form
+                    ul.content_ul
+                        li
+                            label 主题报告:
+                            input(type="text" name="themeReport" id="themeReport" placeholder="")
+                        li
+                            label 行业类型:
+                            select(name="industryType" id="industryType")
+                                option(value="cartype") 汽车行业
+                        li.result_show
+                            label 结果展示:
+                            a(href="javascript:void(0)" id="add_report") 插入结果
+                            //(href="javascript:void(0)" id="add_word") 把文字录入编辑器
+                        div.result_box
+                            script#editor(type='text/plain', style='width:670px;height:350px;').
+                        div.content_button
+                            input(type="button" name="create_preview" id="create_preview" value="预览")
+                            input(type="button" name="create_report" id="create_report" value="生成报告")
+                #create_add_task
+                    .create_add_header
+                    .create_add_content
+                        p
+                            input(type="checkbox")
+                            span 车型分布饼状图
+                        p
+                            input(type="checkbox")
+                            span 性别分布饼状图
+                        p
+                            input(type="checkbox")
+                            span 省份分布饼状图
+                        p
+                            input(type="checkbox")
+                            span AMG车主地域分布
+                        p
+                            input(type="checkbox")
+                            span 锋范地域分布
+                        p
+                            input(type="checkbox")
+                            span 任务名称
+                        p
+                            input(type="checkbox")
+                            span 任务名称
+
+                    .create_add_footer
+        .query_checkBomb
+            .query-report-box
+                .query-report
+                    .query-namebox
+                        .query-butn
+                            span.query-name 报告名称：
+                            em.query_title 五菱宏光车主画像
+                        a.Print(href="javascript:void(0)") 打印
+                    .query-typebox 报告类型：
+                        span.query-type
+                        em.query_title 汽车
+                .query-report-ulbox
+                    ul.report-queryul
+                        li.report-queryli
+                            div.report-onesBox
+                                span.report-query-sale 1. 新能源汽车生产及销售情况
+                                table.report-query-table(border="1" cellpadding="0" cellspacing="0")
+                                    tbody.report-query-tbody
+                                        tr
+                                            td 销量排名
+                                            td 车系
+                                            td 官方价
+                                            td 从属品牌
+                                            td 11月销量
+                                            td 1-11月累计销量
+                                        tr
+                                            td 1
+                                            td 五菱宏光S
+                                            td 4.18-7.93万
+                                            td 五菱
+                                            td 68025
+                                            td 254298
+                                        tr
+                                            td 2
+                                            td 宝骏730
+                                            td 6.08-9.28万
+                                            td 宝骏
+                                            td 44365
+                                            td 320041
+                                        tr
+                                            td 3
+                                            td 北汽幻速H3
+                                            td 5.58-6.28万
+                                            td 北汽幻速
+                                            td 11088
+                                            td 94301
+                                        tr
+                                            td 4
+                                            td 欧诺
+                                            td 3.59-5.39万
+                                            td 长安商用
+                                            td 10550
+                                            td 142603
+                                        tr
+                                            td 5
+                                            td 欧尚
+                                            td 5.19-6.49万
+                                            td 长安商用
+                                            td 10477
+                                            td 108129
+                                        tr
+                                            td 6
+                                            td 别克GL8
+                                            td 20.90-44.99万
+                                            td 别克
+                                            td 9030
+                                            td 70546
+                                        tr
+                                            td 7
+                                            td 菱智
+                                            td 4.99-9.99万
+                                            td 东风风行
+                                            td 7065
+                                            td 87110
+                                        tr
+                                            td 8
+                                            td 风光330
+                                            td 3.68-5.39万
+                                            td 东风风光
+                                            td 7010
+                                            td 88923
+                                        tr
+                                            td 9
+                                            td 风光370
+                                            td 5.59-6.99万
+                                            td 东风风光
+                                            td 5769
+                                            td 62083
+                                        tr
+                                            td 10
+                                            td 奥德赛
+                                            td 22.98-35.48万
+                                            td 本田
+                                            td 4584
+                                            td 34584
+                                div.query-eOnes
+                                    div#query-pies
+                        li.report-queryli2
+                            div.report-twosBox
+                                span.report-query-sale2 2. 五菱宏光车主年龄分布
+                                table.report-query-table2(border="1" cellpadding="0" cellspacing="0")
+                                    tbody.report-query-tbody2
+                                        tr
+                                            td 年龄段
+                                            td 18-20岁
+                                            td 21-25岁
+                                            td 26-30岁
+                                            td 30岁以上
+                                        tr
+                                            td 人数
+                                            td 14
+                                            td 38
+                                            td 24
+                                            td 9
+                                div.query-etwos
+                                    div#query-bars
+                        li.report-queryli3
+                            div.report-threBox
+                                span.report-query-sale3 3. 五菱宏光车主驾龄分布
+                                table.report-query-table3(border="1" cellpadding="0" cellspacing="0")
+                                    tbody.report-query-tbody3
+                                        tr
+                                            td 驾龄
+                                            td 0-1年
+                                            td 1-5年
+                                            td 5年以上
+                                        tr
+                                            td 人数
+                                            td 19
+                                            td 17
+                                            td 8
+                                div.query-ethres
+                                    div#query-pie3
+                        li.report-queryli4
+                            div.report-fouBox
+                                span.report-query-sale4 4. 五菱宏光车主买车用途
+                                table.report-query-table4(border="1" cellpadding="0" cellspacing="0")
+                                    tbody.report-query-tbody4
+                                        tr
+                                            td 用途
+                                            td 电工
+                                            td 代步
+                                            td 记者
+                                            td 拉货
+                                            td 装机
+                                            td 装修
+                                            td 通讯
+                                            td 快递
+                                            td 拉客
+                                            td 自营
+
+                                        tr
+                                            td 人数
+                                            td 2
+                                            td 5
+                                            td 1
+                                            td 9
+                                            td 2
+                                            td 5
+                                            td 1
+                                            td 1
+                                            td 4
+                                            td 7
+                                div.query-efous
+                                    div#query-radar
+                        .function-fif
+                            span.himg 5.五菱宏光车主画像
+                            div.imgbox
+                                div.imgleft
+                                    img(src="/images/static/csg-reportQuery/u1137.jpg")
+
+                                div.imgright
+                                    img(src="/images/static/csg-reportQuery/u1139.jpg")
+                            div.cicty
+                                span.pic 车主画像：
+                                p
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 买五菱宏光的车主，大部分以中青年为主，年龄大概在20-30岁之间。
+                                p
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他们刚刚从校园进入社会不久，买车主要是为了方便工作，比如拉货、装修等。
+                                 p
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他们大部分从事自营或体力劳动，希望能够通过自己的努力改善自己或家庭的生活。不同于朝九晚五的上班族生活，他们大部分都没有固定的上班时间，挣钱多少和辛苦程度有很大关系。但他们都很乐观，积极向上。
+                                p
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 综上所述，五菱宏光的用户群主要还是针对年青人居多，经济条件不算太好，以自由职业和工农居多，他们对购车的要求是：车价低，性能好，实用性强。
+    .csg_reportCreate(style="display:none")
+            script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_reportCreate.js")
+            script(type="text/javascript").
+                CSG.port.csg_reportCreate.init();

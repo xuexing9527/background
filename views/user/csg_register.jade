@@ -1,0 +1,15 @@
+include ../partial/header
+link(rel='stylesheet', href='/stylesheets/part/csg_res.css')
+block content
+    div.login
+        span.zhuce 注册
+        button( type="submit" class="btntwo ,btn-primary btn-block btn-large") 登录
+        span.prompt 已有账号，立即
+        form(method="post")
+            input( type="text" name="u" placeholder="请输入手机号" required="required")
+            input(type="text" class="form-control text3" placeholder="请输入验证码")
+            button( type="submit" class="btnthree btn-primary ") 验证码
+            input( type="password" name="p" placeholder="输入密码" required="required")
+            button( type="submit" class="btn btn-primary btn-block btn-large") 注册
+include ../partial/footer
+script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_register.js")

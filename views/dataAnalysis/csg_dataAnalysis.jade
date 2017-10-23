@@ -1,0 +1,146 @@
+extends ../partial/dataAnalysis_left
+block append right
+    .right
+        #anlysisrighttop
+            .anlysisBreadcrumb_navigation
+                a(href="http://localhost:9298/dataAnalysis/rendering/dataAnalysis") 数据分析
+            .anlysistop
+                form.anlysistopform
+                    // 关键字
+                    input.textones(type='text', placeholder='关键字', id="An_keywords", name="An_keywords" )
+                    // 主题
+                    select.theme(id='An_theme', name='An_theme')
+                        option(value='行业类型') 行业类型
+                        option(value='汽车') 汽车
+                    .layui-input-inline.select_width
+                        input#LAY_demorange_s.layui-input.anlysistime(placeholder='开始日期' name="starttime")
+                    .layui-input-inline.select_width
+                        input#LAY_demorange_e.layui-input.anlysisendtime(placeholder='截止日期')
+                    input.btnones(type='button', value='查询' id="An_search")
+            .query_content_content
+                .query_content_content_header.clearfix
+                    p
+                        a(href="javascript:void(0)" id="An_dataserching") 数据查询
+                    p
+                        a(href="javascript:void(0)" id="An_searchingrel") 查询结果
+                .query_content_content_box_part01
+                    .query_content_content_content
+                        table#an_table(border='1', cellpadding='0', cellspacing='0')
+                            thead
+                                tr
+                                    th.query_th01 选择
+                                    th.query_th02 任务名称
+                                    th.query_th07 名称/表名
+                                    th.query_th03 包含数量
+                                    th.query_th04 生成时间
+                                    th.query_th05 行业
+                                    th.query_th06 操作
+                            tbody#checkAll
+                                tr
+                                    td 暂无数据
+                    .query_content_content_footer.clearfix
+                        .query_footer_left
+                            input(type="button",value="全选").query_footer_left_choise#allcheck
+                            a.query_footer_left_save(href='javascript:void(0)' id="an_save") 保存
+                        .query_footer_right
+                            .pager.pager01
+                    .query_content_choise_button
+                        a(href='javascript:void(0)' id="carryUp_an") 分析选中的内容
+                    .query_popup
+                        p.relpppp#an_search_a
+                                //a(href="javascript:void(0)" id="an_guanxi_liji") 查看详情
+                        #relCanvas 暂无数据
+                .query_content_content_box_part02
+                    .jxy_query_content_xbox
+                        .jxy_query_content_leftbox
+                            ul.jxy_query_content_boxul
+                                li.jxy_query_content_boxli_ones
+                                    span.jxy_query_content_theme 品牌新闻简介
+                                    .jxy_query_content_spanbox_ones
+                                        span.car 2017款加版奔驰GLS450 AMG专属豪华低价
+                                        span.car 追梦赤子心——奔驰AMG GLA45提车记！
+                                        span.car 唤醒沉睡的猛兽--W205 C63 AMG漫长提车作业
+                                        span.car 既能赛车亦可赛艇：梅赛德斯推出AMG快艇
+                                li.jxy_query_content_boxli_twos
+                                    span.jxy_query_content_theme 门户论坛帖子
+                                    .jxy_query_content_spanbox_twos
+                                        table(border='0', cellpadding='0', cellspacing='0')#jxy_table_forum
+                                            tbody
+                                                tr
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                tr
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                tr
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                                    td
+                                                        span.jxy_span_title 新浪网:
+                                                        span.jxy_span_data 12345
+                                li.jxy_query_content_boxli_threes
+                                    span.jxy_query_content_theme 字符云图
+                                    .jxy_query_content_spanbox_threes
+                                        img.pic(src="/images/static/csg-dataAnalysis/bm123.png")
+                        .jxy_query_content_rightbox
+                            .jxy_query_rigbox_topic
+                                #jxy_query_top
+                                #jxy_query_add
+                                #jxy_query_style
+                                .jxy_query_rigbox_topic_buttom
+                                    a.jxy_btn(href='javascript:void(0)' id="jxy_age") 年龄分布
+                                    a.jxy_btn(href='javascript:void(0)' id="jxy_region") 地域分布
+                                    a.jxy_btn(href='javascript:void(0)' id="jxy_models") 车型分布
+                            .jxy_query_rigbox_car
+                                span.jxy_query_content_series 车型系列
+                                .jxy_query_content_seriesbox
+                                    ul.jxy_query_content_seriesul_ones#jxy_carstyle_ul
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg01.png")
+                                            span.jxy_style_car 梅赛德斯 A 45 4MATIC
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg02.png")
+                                            span.jxy_style_car 梅赛德斯 C 63 S 轿跑车
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg03.png")
+                                            span.jxy_style_car 梅赛德斯 G 63
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg04.png")
+                                            span.jxy_style_car GLE 63 S 4MATIC
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg05.png")
+                                            span.jxy_style_car 梅赛德斯-AMG GT S
+                                        li.jxy_query_content_seriesli
+                                            img.jxy_car_image(src="/images/static/csg-dataAnalysis/amg05.png")
+                                            span.jxy_style_car 梅赛德斯-AMG S 65 L
+
+
+    .csg_dataAnalysis(style="display:none")
+        link(rel='stylesheet', href='/stylesheets/part/csg_dataAnalysis.css')
+        script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/dist/extension/dataTool.min.js")
+        script(type="text/javascript", charset="utf-8", src="/javascript/lib/echarts/map/js/china.js")
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_dataAnalysis.js")
+        script(type="text/javascript").
+            CSG.port.csg_dataAnalysis.init();
+
+
+
+

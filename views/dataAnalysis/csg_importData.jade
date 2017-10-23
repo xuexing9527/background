@@ -1,0 +1,78 @@
+extends ../partial/dataAnalysis_left
+block append right
+    .right
+        div.importdata_box
+            div.importdata_box_header
+                a(href="javascript:void(0)") 导入数据
+                    input(type="file" id="importdata_file" name="importdata_file")
+            div.importdata_content
+                div.importdata_content_header
+                    p 导入数据
+                div.importdata_content_content
+                    table#importdata_table(border="1" cellpadding="0" cellspacing="0" )
+                        thead
+                            tr
+                                th.importdata_th01 选择
+                                th.importdata_th02 表名称
+                                th.importdata_th03 样本数量
+                                th.importdata_th04 创建日期
+                        tbody#importdata_tbody
+                            tr
+                                td
+                                    input(type="checkbox"  name="query_checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox" )
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                            tr
+                                td
+                                    input(type="checkbox")
+                                td 汽车满意度调查任务
+                                td 20000
+                                td 2016-11-03
+                div.importdata_content_footer.clearfix
+                    div.importdata_content_footer_left
+                            a#checkAll(href="javascript:void(0)") 全选
+                    div.importdata_content_footer_right
+                        span.page
+                            a(href='javascript:;') <
+                            a(href='javascript:;') 1
+                            a(href='javascript:;') 2
+                            a(href='javascript:;') 3
+                            a(href='javascript:;') 4
+                            span ...
+                            a(href='javascript:;') >
+    .csg_functionAnalysis(style="display:none")
+    link(rel='stylesheet', href='/stylesheets/part/csg_importData.css')
+    script(type="text/javascript", charset="utf-8", src="/javascript/common/port/csg_importData.js")
+    script(type="text/javascript").
+        CSG.port.csg_importData.init();

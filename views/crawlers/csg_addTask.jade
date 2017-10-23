@@ -1,0 +1,56 @@
+extends ./../partial/crawlers_left
+block right
+    .right
+        .xxBuiltTaskContainer
+            .xxheader
+                h1 创建任务
+            .xxSection#addTask
+                p
+                    label
+                        span 任务名称&nbsp;:
+                        input(type='text',name='jobName' value="易车")
+                p
+                    label
+                        span 任务描述&nbsp;:
+                        input(type='text',name='jobDesciber' value="车型全站")
+                p
+                    label
+                        span 爬取链接&nbsp;:
+                        input(type='text',name='targetUrl' value= "http://baa.bitauto.com/foruminterrelated/brandforumlist.html")
+                p
+                    label
+                        span 行业数据类型&nbsp;:
+                        select
+                p
+                    label
+                        span 主题类型&nbsp;:
+                        select
+                p
+                    label
+                        span 内容抓取字段&nbsp;:
+                        br
+                        span
+                        textarea(style="width: 294px;height: 5em;resize:none;",id="contentScript")$(".postslist_xh").each(function(i){var title = $($(this).find(".bt")).text(),builtAuthor = $($($(this).find(".zhhf"))[0]).text(),birthDate = $(this).find(".date").text(),clickCount = $(this).find(".hf").text();var obj = {title:title,author:builtAuthor,posting_date:birthDate,replies_click:clickCount};KAFKA(msg,obj,i)});;
+                p
+                    label
+                        span handle循环函数&nbsp;:
+                        br
+                        span
+                        textarea(style="width: 294px; height: 5em;resize:none;",id="nextContentScript") ;;;;
+                p
+                    label
+                        span 编码类型&nbsp;:
+                        br
+                        span
+                        textarea(style="width: 294px;height: 5em;resize:none;",id="decisionScript") 0
+                p
+                    label
+                        span 抓取方式&nbsp;:
+                        br
+                        span
+                        textarea(style="width: 294px;height: 5em;resize:none;",id="type") 1
+            .xxfooter
+                button#clean 清空
+                button#submitJob 确定
+        link(rel='stylesheet',href='/stylesheets/crawlers/csg_addTask.css')
+        script(type="text/javascript", charset="utf-8", src="/javascript/common/crawlers/addTask.js")

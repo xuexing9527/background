@@ -1,0 +1,47 @@
+{
+  "name": "background",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "forever ./bin/runApp &",
+    "run": "node ./bin/runApp",
+    "stop": "forever stop ./bin/runApp"
+  },
+  "dependencies": {
+    "amqp": "^0.2.6",
+    "amqplib": "^0.5.1",
+    "async": "^2.1.4",
+    "body-parser": "~1.15.2",
+    "bufferhelper": "^0.2.1",
+    "cheerio": "~0.19.0",
+    "config": "^1.24.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "express-database": "~1.0.0",
+    "express-database-mysql": "~0.1.0",
+    "express-load-config": "0.0.3",
+    "express-session": "~1.14.2",
+    "fibers": "^1.0.15",
+    "forever": "^0.15.3",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "http": "0.0.0",
+    "iconv-lite": "^0.4.15",
+    "jade": "~1.11.0",
+    "kafka-node": "^1.0.7",
+    "less": "^2.7.2",
+    "log4js": "~1.0.1",
+    "morgan": "~1.7.0",
+    "node-amqp": "^1.2.1",
+    "open": "~0.0.5",
+    "rabbit.js": "^0.4.4",
+    "serve-favicon": "~2.3.0",
+    "ueditor": "~1.2.0",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "querystring": "^0.2.0",
+    "superagent": "^2.3.0"
+  }
+}
